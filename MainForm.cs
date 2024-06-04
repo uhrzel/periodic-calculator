@@ -46,8 +46,8 @@
         lblTitle.Location = new System.Drawing.Point(20, 0); // Adjust the Y-coordinate as needed
         lblTitle.Size = new System.Drawing.Size(260, 30); // Adjust the width and height as needed
 
-    // Add the title label to the form
-    this.Controls.Add(lblTitle);
+    
+                this.Controls.Add(lblTitle);
             
                 this.Text = "Periodic Grade Calculator";
                 this.Size = new System.Drawing.Size(300, 480);
@@ -320,7 +320,7 @@ public class PeriodicGradeCalculator
     }
  public string DetermineRemark(double periodicGrade)
     {
-        return (periodicGrade >= 50) ? "Passed" : "Failed";
+        return (periodicGrade >= 75) ? "Passed" : "Failed";
     }
     
 
